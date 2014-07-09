@@ -112,6 +112,6 @@ for (;;i++) {
 }
 ```
 
-Over the years, computer programs have proven that the conjecture is true for numbers as large as 4 * 10^18 $$ (*That's 4 billion billion*!). It's pretty frustrating that with so much evidence that the claim is true, we can't put together a formal proof for it.
+Over the years, computer programs have proven that the conjecture is true for numbers as large as 4 * 10^18 (*That's 4 billion billion*!). It's pretty frustrating that even with so much evidence that the claim is true, we can't seem to put together a formal proof for it.
 
 As it turns out, proving Goldbach's conjecture *reduces* to the halting problem. If we were able to tell if our testing program eventually exits, we would have a yes/no answer to whether the conjecture were true or false.

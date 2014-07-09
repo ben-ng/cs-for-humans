@@ -43,7 +43,7 @@ Since the `opposite` program was constructed with a simple if/else statement, wh
 
 ## Why Do We Care?
 
-It turns out that many unsolved problems *reduce* to the halting problem. This means that if you were able to solve the halting problem, you would be able to use that solution to solve *all* these other problems.
+It turns out that many unsolved problems *reduce* to the halting problem. This means that if you were able to solve any of these problems, you could also solve the halting problem, and vice-versa. (1)
 
 I'll give you two practical problems, and one mathematical problem.
 
@@ -85,7 +85,7 @@ How do you know when a page is done loading, and it is safe to start indexing? H
 
 *Can you ever know for sure?*
 
-You guessed it: the answer is no. While you might be able to tell when a script has stopped running (in the case of JavaScript, when there are no more callbacks/events bound), you can't tell if a script *will* stop running. Since modern websites have complex scripts that are alive all the time, this problem is essentially undecidable.
+You guessed it: the answer is no. You can't tell if a script will stop running unless it has already stopped. Since modern websites have complex scripts that are alive all the time, this problem is essentially undecidable.
 
 ### The Goldbach Conjecture
 
@@ -115,3 +115,7 @@ for (;;i++) {
 Over the years, computer programs have proven that the conjecture is true for numbers as large as 4 * 10^18 (*That's 4 billion billion*!). It's pretty frustrating that even with so much evidence that the claim is true, we can't seem to put together a formal proof for it.
 
 As it turns out, proving Goldbach's conjecture *reduces* to the halting problem. If we were able to tell if our testing program eventually exits, we would have a yes/no answer to whether the conjecture were true or false.
+
+#### Footnotes
+
+(1) Not always true, [how hard the problems are relative to each other matters](https://en.wikipedia.org/wiki/Reduction_\(complexity\))
